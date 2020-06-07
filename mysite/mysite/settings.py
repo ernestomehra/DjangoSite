@@ -25,6 +25,14 @@ SECRET_KEY = '^hw*lu(54(o1**wp!v0%qb-#!plyb-ft3hvvt5*@pp(w3%3fp&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'mehra9090@gmail.com'
+EMAIL_HOST_PASSWORD = 'MyNewGooglePassword'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 ALLOWED_HOSTS = []
 
 
@@ -39,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mysite',
+
 ]
 
 MIDDLEWARE = [
@@ -121,7 +130,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# MEDIA_URL = '/assets/'
 
 
 
