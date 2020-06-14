@@ -12,5 +12,5 @@ To run the code:
 ## Steps:
 
 1. Clone the repository `git clone git@github.com:ernestomehra/DjangoSite.git`
-2. Run the command ```docker-compose up --build```
+2. Run the command inside the project directory ```docker-compose up --build```
 
